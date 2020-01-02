@@ -81,4 +81,10 @@ public class MenuItem {
         this.freeDelivery = freeDelivery;
     }
 
+    @Override
+    public String toString() {
+        return "MenuItem [id=" + id + ", name=" + name + ", price=" + price + ", active=" + active
+                + ", category=" + category + ", freeDelivery=" + freeDelivery + "]";
+    }
+
 }
