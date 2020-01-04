@@ -43,7 +43,7 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
         for (MenuItem menuItem : menuItemList) {
             if ((menuItem.getDateOfLaunch().before(new Date())
                     || menuItem.getDateOfLaunch().equals(new Date()))
-                            && menuItem.isActive() == true) {
+                    && menuItem.isActive() == true) {
                 menuItems.add(menuItem);
             }
         }
@@ -52,8 +52,8 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
 
     @Override
     public void modifyMenuItem(MenuItem menuitem) {
-        for(int i=0;i<menuItemList.size();i++) {
-            if(menuItemList.get(i).getId()==menuitem.getId()) {
+        for (int i = 0; i < menuItemList.size(); i++) {
+            if (menuItemList.get(i).getId() == menuitem.getId()) {
                 menuItemList.set(i, menuitem);
             }
         }
@@ -62,11 +62,11 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
 
     @Override
     public MenuItem getMenuItem(long menuItemId) {
-       for(MenuItem menuItem:menuItemList) {
-           if(menuItem.getId()==menuItemId) {
-               return menuItem;
-           }
-       }
+        for (MenuItem menuItem : menuItemList) {
+            if (menuItem.getId() == menuItemId) {
+                return menuItem;
+            }
+        }
         return null;
     }
 

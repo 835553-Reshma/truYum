@@ -1,0 +1,96 @@
+/*Menu Item List Admin,Menu Item List Customer,Edit Menu Item,Edit Menu Item Status,Menu Item List Customer,Cart,Cart Empty,Remove Cart	*/
+header {
+    color: #f5f0f0;
+    top: 0%;
+    background-color: #4c68a1;
+    min-width: 100%;
+    position: fixed;
+    left: 0%;
+    font-size: 30px;
+}
+/*Menu Item List Admin,Menu Item List Customer,Edit Menu Item,Edit Menu Item Status,Menu Item List Customer,Cart,Cart Empty,Remove Cart	*/
+footer {
+    bottom: 0%;
+    background-color: #bbbfbd;
+    width: 100%;
+    position: fixed;
+    left: 0%;
+    padding: 10px;
+}
+/*Menu Item List Admin,Menu Item List Customer,Edit Menu Item,Edit Menu Item Status,Menu Item List Customer,Cart,Cart Empty,Remove Cart	*/
+nav {
+    font-size: 12px;
+    margin-left: 93%;
+    top: 1%;
+    position: fixed;
+}
+/*Menu Item List Admin,Menu Item List Customer,Edit Menu Item,Edit Menu Item Status,Menu Item List Customer,Cart,Cart Empty,Remove Cart	*/
+nav .menu {
+    color: #f5f0f0;
+    margin-right: 60px;
+}
+/*Menu Item List Customer,Cart,Cart Empty,Remove Cart	*/
+nav .cart {
+    color: #f5f0f0;
+}
+/*Edit Menu Item Status,Menu Item List Customer,Cart Empty,Remove Cart	*/
+.paragraph {
+    color: #3b9c55;
+}
+/*cart empty*/
+#paragraph {
+    color: #bbbfbd;
+}
+/*Menu Item List Admin,Menu Item List Customer,Edit Menu Item,Edit Menu Item Status,Menu Item List Customer,Cart,Cart Empty,Remove Cart	*/
+body {
+    margin-left: 3%;
+    top: 8%;
+    position: fixed;
+}
+/*Menu Item List Admin,Menu Item List Customer,Menu Item List Customer,Cart,Remove Cart	*/
+.align-left {
+    text-align: left;
+}
+/*Menu Item List Admin,Menu Item List Customer,Menu Item List Customer,Cart,Remove Cart	*/
+.align-right {
+    text-align: right;
+    width: 25px;
+}
+/*Menu Item List Admin,Menu Item List Customer,Menu Item List Customer,Cart,Remove Cart	*/
+.align-mid {
+    text-align: center;
+    width: 110px;
+}
+
+/*Edit Menu item	*/
+span {
+    display: inline-block;
+}
+/*Menu Item List Admin,Menu Item List Customer,Edit Menu Item,Edit Menu Item Status,Menu Item List Customer,Cart,Cart Empty,Remove Cart	*/
+.heading {
+    margin-right: 70px;
+}
+/* Edit menu item*/
+.padding {
+    padding-left: 10px;
+}
+/* Edit menu item*/
+.padding-bottom {
+    padding-bottom: 20px;
+}
+/* Edit menu item*/
+.submit {
+    background-color: #355487;
+    color: #f5f0f0;
+    height: 50px;
+    width: 150px;
+}
+/* Edit menu item*/
+.checkbox {
+    padding-bottom: 20px;
+}
+
+/*cart empty*/
+.menu-item-list {
+    color: #1eaee3;
+}
