@@ -1,14 +1,14 @@
-function valid() {
-    var title = document.forms["user"]["title"].value;
-    if (title == "") {
+function validateMenuItemForm() {
+    var name = document.forms["menuItemForm"]["name"].value;
+    if (name == "") {
         alert("Title is required.");
         return false;
     }
-    if (title.length < 2 || title.length > 65) {
+    if (name.length < 2 || name.length > 65) {
         alert("Title should have 2 to 65 characters.");
         return false;
     }
-    var price = document.forms["user"]["price"].value;
+    var price = document.forms["menuItemForm"]["price"].value;
     if (price == "") {
         alert("Price is required.");
         return false;
@@ -17,14 +17,15 @@ function valid() {
         alert("Price has to be a number.");
         return false;
     }
-    var dateOfLaunch = document.forms["user"]["dateOfLaunch"].value;
+    var dateOfLaunch = document.forms["menuItemForm"]["dateOfLaunch"].value;
     if (dateOfLaunch == "") {
         alert("Date of Launch is required.");
         return false;
     }
-    var category = document.forms["user"]["category"].value;
+    var category = document.forms["menuItemForm"]["category"].value;
     if (category == "") {
         alert("Select one category.");
         return false;
     }
+
 }
