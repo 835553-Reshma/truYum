@@ -36,7 +36,8 @@
                         <c:when test="${menuItem.isFreeDelivery()==true}">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
                     </c:choose></td>
-                <td class="align-right">${menuItem.getPrice()}</td>
+                <td class="align-right"><f:setLocale value="en_In" /> <f:formatNumber
+                        type="currency" value="${menuItem.getPrice()}" minFractionDigits="2"></f:formatNumber></td>
                 <td class="align-mid">${menuItem.getCategory()}</td>
 
                 <td class="align-mid"><a href="AddToCart?menuItemId=${menuItem.getId()}">Add

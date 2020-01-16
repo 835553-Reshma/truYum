@@ -12,7 +12,7 @@
 <body>
     <header> &nbsp;&nbsp;truYum &nbsp;&nbsp; <image src="images\truyum-logo-light.png"
         width=30 height=30 /> <nav> <a class="menu" href="ShowMenuItemListCustomer">Menu</a>
-    <a class="cart" href="l">Cart</a> </nav> </header>
+    <a class="cart" href="ShowCart">Cart</a> </nav> </header>
     <h1 class="heading">Cart</h1>
     <c:if test="${removeCartItemStatus==true}">
         <h4 class="paragraph" align="center">
