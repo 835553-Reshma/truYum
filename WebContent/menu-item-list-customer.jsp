@@ -10,8 +10,6 @@
 <script src="js\script.js"></script>
 </head>
 <body>
-
-
     <header> &nbsp;&nbsp;truYum &nbsp;&nbsp; <image src="images\truyum-logo-light.png"
         width=30 height=30 /> <nav> <a class="menu" href="ShowMenuItemListCustomer">Menu</a>
     <a class="cart" href="ShowCart">Cart</a> </nav> </header>
@@ -42,11 +40,8 @@
 
                 <td class="align-mid"><a href="AddToCart?menuItemId=${menuItem.getId()}">Add
                         to Cart</a></td>
-
             </tr>
         </c:forEach>
-
-
         <footer> Copyright &copy; 2019 </footer>
 </body>
 </html>
