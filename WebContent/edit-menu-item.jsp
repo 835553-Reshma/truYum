@@ -64,10 +64,10 @@
             <div class="padding">
                 <select name="category">
                     <option value="${menuItem.getCategory()}">${menuItem.getCategory()}</option>
-                    <option value="main course">Main Course</option>
-                    <option value="starters">Starters</option>
-                    <option value="dessert">Dessert</option>
-                    <option value="drinks">Drinks</option>
+                    <option value="Main Course">Main Course</option>
+                    <option value="Starters">Starters</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Drinks">Drinks</option>
                 </select>
             </div>
         </span>
