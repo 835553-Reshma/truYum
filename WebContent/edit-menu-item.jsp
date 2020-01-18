@@ -40,7 +40,7 @@
             </div>
             <div class="padding-bottom">
                 <c:choose>
-                    <c:when test="${menuItem.getPrice()}==true}">
+                    <c:when test="${menuItem.isActive()==true}">
                         <input type="radio" value="Yes" name="active" checked="checked" />Yes
                         <input type="radio" value="No" name="active" />No</c:when>
                     <c:otherwise>
