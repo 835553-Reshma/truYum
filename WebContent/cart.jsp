@@ -25,7 +25,7 @@
             <th align="left" width=40%>Name</th>
             <th class="align-left">Free Delivery</th>
             <th class="align-right">Price</th>
-            <th class="align-mid"></th>
+            <th class="align-center"></th>
         </tr>
         <c:forEach items="${menuItem}" var="menuItem">
             <tr>
@@ -36,7 +36,7 @@
                     </c:choose></td>
                 <td class="align-right"><f:setLocale value="en_In" /> <f:formatNumber
                         type="currency" value="${menuItem.getPrice()}" minFractionDigits="2"></f:formatNumber></td>
-                <td class="align-mid"><a href="RemoveCart?menuItemId=${menuItem.getId()}">
+                <td class="align-center"><a href="RemoveCart?menuItemId=${menuItem.getId()}">
                         Delete</a></td>
 
             </tr>

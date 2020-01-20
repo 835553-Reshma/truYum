@@ -16,11 +16,11 @@
         <tr>
             <th align="left" width=25%>Name</th>
             <th class="align-right">Price</th>
-            <th class="align-mid">Active</th>
-            <th class="align-mid">Date of Launch</th>
-            <th class="align-mid">Category</th>
-            <th class="align-mid">Free Delivery</th>
-            <th class="align-mid">Action</th>
+            <th class="align-center">Active</th>
+            <th class="align-center">Date of Launch</th>
+            <th class="align-center">Category</th>
+            <th class="align-center">Free Delivery</th>
+            <th class="align-center">Action</th>
         </tr>
         <c:forEach items="${menuItem}" var="menuItem">
             <tr>
@@ -28,18 +28,19 @@
                 <td class="align-right"><f:setLocale value="en_In" /> <f:formatNumber
                         type="currency" value="${menuItem.getPrice()}" minFractionDigits="2"></f:formatNumber>
                 </td>
-                <td class="align-mid"><c:choose>
+                <td class="align-center"><c:choose>
                         <c:when test="${menuItem.isActive()==true}">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
                     </c:choose></td>
-                <td class="align-mid"><f:formatDate value="${menuItem.getDateOfLaunch()}"
+                <td class="align-center"><f:formatDate value="${menuItem.getDateOfLaunch()}"
                         pattern="dd/MM/yyyy"></f:formatDate></td>
-                <td class="align-mid">${menuItem.getCategory()}</td>
-                <td class="align-mid"><c:choose>
+                <td class="align-center">${menuItem.getCategory()}</td>
+                <td class="align-center"><c:choose>
                         <c:when test="${menuItem.isFreeDelivery()==true}">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
                     </c:choose></td>
-                <td class="align-mid"><a href="ShowEditMenuItem?menuItemId=${menuItem.getId()}">Edit</a></td>
+                <td class="align-center"><a
+                    href="ShowEditMenuItem?menuItemId=${menuItem.getId()}">Edit</a></td>
 
             </tr>
         </c:forEach>

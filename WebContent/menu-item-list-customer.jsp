@@ -22,23 +22,23 @@
     <table cellpadding=5px>
         <tr>
             <th align="left" width=30%>Name</th>
-            <th class="align-mid">Free Delivery</th>
+            <th class="align-center">Free Delivery</th>
             <th class="align-right">Price</th>
-            <th class="align-mid">Category</th>
-            <th class="align-mid">Action</th>
+            <th class="align-center">Category</th>
+            <th class="align-center">Action</th>
         </tr>
         <c:forEach items="${menuItem}" var="menuItem">
             <tr>
                 <td class="align-left">${menuItem.getName()}</td>
-                <td class="align-mid"><c:choose>
+                <td class="align-center"><c:choose>
                         <c:when test="${menuItem.isFreeDelivery()==true}">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
                     </c:choose></td>
                 <td class="align-right"><f:setLocale value="en_In" /> <f:formatNumber
                         type="currency" value="${menuItem.getPrice()}" minFractionDigits="2"></f:formatNumber></td>
-                <td class="align-mid">${menuItem.getCategory()}</td>
+                <td class="align-center">${menuItem.getCategory()}</td>
 
-                <td class="align-mid"><a href="AddToCart?menuItemId=${menuItem.getId()}">Add
+                <td class="align-center"><a href="AddToCart?menuItemId=${menuItem.getId()}">Add
                         to Cart</a></td>
             </tr>
         </c:forEach>
